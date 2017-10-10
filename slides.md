@@ -336,6 +336,8 @@ def subtract(d1, d2):
     return res
 ```
 
++++++
+
 To find the words in the book that are not in words.txt, we can use process_file to build a histogram for words.txt, and then subtract:
 
 ```python
