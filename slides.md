@@ -370,5 +370,4 @@ An alternative is:
 
 +++++
 
-Homework is 13.4 and 13.5. Extra credit is to find a python2 module, convert it with 2to3, and note the differences between them/if it works in python3 now. EC is 10 points.
-
+Homework is 13.4 and 13.5
