@@ -10,7 +10,7 @@ revealOptions:
 ### ITSE-1402 Intermediate Python
 <span style="font-family:Helvetica Neue; font-weight:bold; color:#e49436">Class 7: Chapter 13: Case Study: data structure</span>
 <br /><br />
-##### [https://z3r0.tech/slides-7](https://z3r0.tech/slides-7)
+##### [https://coder.run/1402-class7](https://coder.run/1402-class7)
 
 -----
 
@@ -18,8 +18,20 @@ revealOptions:
 
 +++++
 
-[https://z3r0.tech/1402-chap13](https://z3r0.tech/1402-chap13)
+[https://coder.run/1402-chap13](https://coder.run/1402-chap13)
 
++++++
+
+#### Testing Knowledge!
+
+- What are two ways to create an empty tuple?
+- What data types can be in a tuple?
+- What is the main difference between lists and tuples?
+- What is it called when you use tuples to assign variables?
+- What value do tuples add to functions?
+
+Note:
+Tuples add value with multiple outputs in returns and multiple inputs
 +++++
 
 ##### Case study: data structure
@@ -30,69 +42,65 @@ revealOptions:
 
 +++++
 
-```python
+<pre class="stretch"><code class="python" data-trim data-noescape>
 #!/usr/bin/env python3
 
 # Exercise 13.1
 #
-# 1. Write a program that reads a file, breaks each line into words, strips
-# whitespace and punctuation from the words, and converts them to lowercase.
+# Grading Guidelines:
+# - No answer variable is needed. Grading script will call function.
+# - Function "strip_and_lower" will not be checked aside from ability to run.
 #
-# Hint: The string module provides a string named whitespace, which contains 
-# space, tab, newline, etc., and "punctuation which contains the punctuation
+# 1. Write a function named "strip_and_lower" that reads "emma.txt", breaks each 
+# line into words, strips whitespace and punctuation from the words, and 
+# converts them to lowercase. Nothing should be returned at this time. 
+#
+# Hint: The string module provides a string named "whitespace", which contains 
+# space, tab, newline, etc., and "punctuation" which contains the punctuation
 # characters. Let's see if we can make Python swear:
 #
 # >>> import string
 # >>> string.punctuation
 # '!"#$%&'()*+,-./:;<=>?@[\]^_`{|}~'
-#
-# Also, you might consider using the string methods strip, replace and translate.
-```
+</code></pre>
 
 +++++
 
-```python
+<pre class="stretch"><code class="python" data-trim data-noescape>
 #!/usr/bin/env python3
 
 # Exercise 13.2
 #
-# 1. Go to Project Gutenberg (http://gutenberg.org) and download your favorite
-# out-of-copyright book in plain text format. Modify your program from the
-# previous exercise to read the book you downloaded, skip over the header
-# information at the beginning of the file, and process the rest of the words 
-# as before. 
+# Grading Guidelines:
+# - No answer variable is needed. Grading script will call function.
+# - Function "strip_and_lower" should return a histogram in the form of a
+# dictionary where the key is the word and the value is the number of times
+# it occured.
 #
-# Then modify the program to count the total number of words in the book, and 
-# the number of times each word is used.
-# 
-# Print the number of different words used in the book. Compare different books 
-# by different authors, written in different eras. Which author uses the most 
-# extensive vocabulary?
-```
+# 1. Modify your function from the previous exercise to skip over the header 
+# information at the beginning of the file, and process the rest of the words 
+# as before. Then modify the function to count the total number of words in 
+# the book, and the number of times each word is used. Use a histogram to
+# collect this info and return that dictionary -- where the key is the word 
+# and the value is the number of times it occured. 
+</code></pre>
 
 +++++
 
-```python
+<pre class="stretch"><code class="python" data-trim data-noescape>
 #!/usr/bin/env python3
 
 # Exercise 13.3
 #
-# 1. Modify the program from the previous exercise to print the 20 most 
-# frequently used words in the book.
-```
-
-+++++
-
-```python
-#!/usr/bin/env python3
-
-# Exercise 13.4
-#
-# 1. Modify the previous program to read a word list (see "Reading Word Lists") 
-# and then print all the words in the book that are not in the word list. 
-# How many of them are typos? How many of them are common words that should be 
-# in the word list, and how many of them are really obscure?
-```
+# Grading Guidelines:
+# - No answer variable is needed. Grading script will call function.
+# - Function "strip_and_lower" should return a list of the 20 most frequently
+# used words in the book in order of usage, decending.
+# 
+# Question 1
+# 1. Modify the function from the previous exercise to return a list of the
+# 20 most frequently used words in the book in order of usage, decending.
+</code></pre>
 
 +++++
 
@@ -148,27 +156,6 @@ random.choice(t)
 # 2
 random.choice(t)
 # 3
-```
-
-+++++
-
-```python
-#!/usr/bin/env python3
-
-# Exercise 13.5
-#
-# 1. Write a function named choose_from_hist that takes a histogram as defined
-# in "Dictionary as a Collection of Counters" and returns a random value from 
-# the histogram, "chosen with probability in proportion to frequency. For 
-# example, for this histogram:
-#
-# >>> t = ['a', 'a', 'b']
-# >>> hist = histogram(t)
-# >>> hist
-# {'a': 2, 'b': 1}
-# 
-# Your function should return 'a' with probability 2/3 and 'b' with probability 
-# 1/3.
 ```
 
 +++++
@@ -350,21 +337,6 @@ for word in diff:
 
 +++++
 
-```python
-#!/usr/bin/env python3
-
-# Exercise 13.6
-#
-# 1. Python provides a data structure called set that provides many common set 
-# operations. You can read about them in "Sets", or read the documentation at 
-# http://docs.python.org/3/library/stdtypes.html#types-set.
-#
-# Write a program that uses set subtraction to find words in the book that are 
-# not in the word list.
-```
-
-+++++
-
 ##### 13.7 Random words
 
 +++++
@@ -398,60 +370,5 @@ An alternative is:
 
 +++++
 
-```python
-#!/usr/bin/env python3
-
-# Exercise 13.7
-#
-# 1. Write a program that uses this algorithm to choose a random word from the book.
-#
-# def random_word(h):
-#    t = []
-#    for word, freq in h.items():
-#        t.extend([word] * freq)
-#    return random.choice(t)
-```
-+++++
-
-13.8 Markov analysis
-If you choose words from the book at random, you can get a sense of the vocabulary, but you probably won’t get a sentence:
-
-> this the small regard harriet which knightley's it most things
-
-A series of random words seldom makes sense because there is no relationship between successive words. For example, in a real sentence you would expect an article like “the” to be followed by an adjective or a noun, and probably not a verb or adverb.
-
-+++++
-
-One way to measure these kinds of relationships is Markov analysis, which characterizes, for a given sequence of words, the probability of the words that might come next. 
-
-For example, the song Eric, the Half a Bee begins:
-
-> Half a bee, philosophically,
-> Must, ipso facto, half not be.
-> But half the bee has got to be
-> Vis a vis, its entity. D’you see?
-> But can a bee be said to be
-> Or not to be an entire bee
-> When half the bee is not a bee
-> Due to some ancient injury?
-
-In this text, the phrase “half the” is always followed by the word “bee”, but the phrase “the bee” might be followed by either “has” or “is”.
-
-+++++
-
-The result of Markov analysis is a mapping from each prefix (like “half the” and “the bee”) to all possible suffixes (like “has” and “is”).
-
-Given this mapping, you can generate a random text by starting with any prefix and choosing at random from the possible suffixes. Next, you can combine the end of the prefix and the new suffix to form the next prefix, and repeat.
-
-Note:
-
-For example, if you start with the prefix “Half a”, then the next word has to be “bee”,
-because the prefix only appears once in the text. The next prefix is “a bee”, so the next
-suffix might be “philosophically”, “be” or “due”.
-In this example the length of the prefix is always two, but you can do Markov analysis with
-any prefix length.
-
-+++++
-
-Homework is 13.8 and extra credit is to find a python2 module, convert it with 2to3, and note the differences between them/if it works in python3 now. EC is 10 points.
+Homework is 13.4 and 13.5. Extra credit is to find a python2 module, convert it with 2to3, and note the differences between them/if it works in python3 now. EC is 10 points.
 
