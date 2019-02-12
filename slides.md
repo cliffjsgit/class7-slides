@@ -10,7 +10,7 @@ revealOptions:
 ### ITSE-1402 Intermediate Python
 <span style="font-family:Helvetica Neue; font-weight:bold; color:#e49436">Class 7: Chapter 13: Case Study: data structure</span>
 <br /><br />
-##### [https://coder.run/1402-class7](https://coder.run/1402-class7)
+##### [https://bit.ly/1402-class7](https://bit.ly/1402-class7)
 
 -----
 
@@ -18,7 +18,7 @@ revealOptions:
 
 +++++
 
-[https://coder.run/1402-chap13](https://coder.run/1402-chap13)
+[https://bit.ly/1402-chap13](https://bit.ly/1402-chap13)
 
 +++++
 
