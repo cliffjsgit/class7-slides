@@ -7,7 +7,7 @@ revealOptions:
     transition: 'fade'
 ---
 
-### ITSE-ITSE-1042 Intermediate Python
+### ITSE-1042 Intermediate Python
 
 -----
 
