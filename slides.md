@@ -32,10 +32,6 @@ Tuples add value with multiple outputs in returns and multiple inputs
 
 # Exercise 13.1
 #
-# Grading Guidelines:
-# - No answer variable is needed. Grading script will call function.
-# - Function "strip_and_lower" will not be checked aside from ability to run.
-#
 # 1. Write a function named "strip_and_lower" that reads "emma.txt", breaks each 
 # line into words, strips whitespace and punctuation from the words, and 
 # converts them to lowercase. Nothing should be returned at this time. 
@@ -56,12 +52,6 @@ Tuples add value with multiple outputs in returns and multiple inputs
 
 # Exercise 13.2
 #
-# Grading Guidelines:
-# - No answer variable is needed. Grading script will call function.
-# - Function "strip_and_lower" should return a histogram in the form of a
-# dictionary where the key is the word and the value is the number of times
-# it occured.
-#
 # 1. Modify your function from the previous exercise to skip over the header 
 # information at the beginning of the file, and process the rest of the words 
 # as before. Then modify the function to count the total number of words in 
@@ -77,11 +67,6 @@ Tuples add value with multiple outputs in returns and multiple inputs
 
 # Exercise 13.3
 #
-# Grading Guidelines:
-# - No answer variable is needed. Grading script will call function.
-# - Function "strip_and_lower" should return a list of the 20 most frequently
-# used words in the book in order of usage, decending.
-# 
 # Question 1
 # 1. Modify the function from the previous exercise to return a list of the
 # 20 most frequently used words in the book in order of usage, decending.
