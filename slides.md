@@ -7,28 +7,13 @@ revealOptions:
     transition: 'fade'
 ---
 
-### ITSE-1402 Intermediate Python
-<span style="font-family:Helvetica Neue; font-weight:bold; color:#e49436">Class 7: Chapter 13: Case Study: data structure</span>
-<br /><br />
-##### [https://bit.ly/1402-class7](https://bit.ly/1402-class7)
+### ITSE-ITSE-1042 Intermediate Python
 
 -----
 
 ##### Chapter 13: Case Study: data structure
 
 +++++
-
-[https://bit.ly/1402-chap13](https://bit.ly/1402-chap13)
-
-+++++
-
-#### Testing Knowledge!
-
-- What are two ways to create an empty tuple?
-- What data types can be in a tuple?
-- What is the main difference between lists and tuples?
-- What is it called when you use tuples to assign variables?
-- What value do tuples add to functions?
 
 Note:
 Tuples add value with multiple outputs in returns and multiple inputs
