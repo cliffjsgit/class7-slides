@@ -191,10 +191,12 @@ split to break the line into a list of strings. It traverses the list of words a
 and lower to remove punctuation and convert to lower case. (It is a shorthand to say that
 strings are “converted”; remember that strings are immutable, so methods like strip and
 lower return new strings.)
-Finally, process_line updates the histogram by creating a new item or incrementing an
-existing one.
+Finally, process_line updates the histogram by creating a new item or incrementing an existing one.
 
 +++++
+
+values() is a dictionary builtin method that returns a list of all the values available in a given dictionary.
+It returns a list of all the values available in the dictionary, where values are stored in reverse.
 
 To count the total number of words in the file, we can add up the frequencies in the histogram:
 
