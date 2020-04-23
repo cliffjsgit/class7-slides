@@ -24,7 +24,8 @@ The str type methods in the Python Standard Library are helpful for word problem
 -- https://docs.python.org/3/library/stdtypes.html#text-sequence-type-str
 - String Methods
 -- https://docs.python.org/3/library/stdtypes.html#string-methods 
--- Examples: str.replace, str.split, str.strip, str.lstrip, str.upper, str.lower, str.splitlines, str.ljust, str.rjust, 
+-- Examples: str.replace, str.split, str.strip, str.lstrip, str.upper, str.lower, str.splitlines, str.ljust, str.rjust, etc
+-- Whitespace characters are typically a space, tab, and formfeed
 
 
 +++++
