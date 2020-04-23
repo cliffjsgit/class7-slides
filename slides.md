@@ -99,7 +99,13 @@ space, tab, linefeed, return, formfeed, and vertical tab.
 
 +++++
 
-Most computers are deterministic and provid the same outputs for the same inputs everytime. This can be undesirable in some cases where you would want a unpredicable output. A good example of this is with gaming. 
+Most computer programs are deterministic and provide the same outputs for the same inputs everytime. This can be undesirable in some cases where you would want a unpredicable output. 
+
+Some examples where there is a need for unpredicable data in s progra include:
+- Gaming (card, dice, strategy, etc)
+- Simulations
+- Cryptography
+- Scientific analysis
 
 +++++
 
