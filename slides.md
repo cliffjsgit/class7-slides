@@ -32,7 +32,7 @@ The str type methods in the Python Standard Library are helpful for word problem
 -- string.punctuation - String of characters which are considered the punctuation characters in the current locale.   
 -- string.whitespace - String containing all characters that are considered whitespace. These characters are usually
 space, tab, linefeed, return, formfeed, and vertical tab.   
-- The datastucutres in Python provide useful methods for manipulating a lists and dictionary/histogram (ex. the sort method):       
+- The datastucutres in Python provide useful methods for manipulating a list and a dictionary/histogram (ex. the sort method):       
 -- https://docs.python.org/3/tutorial/datastructures.html   
 -- https://docs.python.org/3/howto/sorting.html   
 
