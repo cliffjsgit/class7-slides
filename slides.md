@@ -19,8 +19,8 @@ Notes:
 - Tuples add value with multiple outputs in returns and multiple inputs
 
 
-The Standard str type methods are very helpful for word problem analysis / changes
-- Text Sequence Type - str
+The str type methods in the Python Standard Library are helpful for word problem analysis / changes
+- Text Sequence Type str
 -- https://docs.python.org/3/library/stdtypes.html#text-sequence-type-str
 - String Methods
 -- https://docs.python.org/3/library/stdtypes.html#string-methods 
