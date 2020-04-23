@@ -114,6 +114,8 @@ Truly nondeterministic is hard to accomplish, but we can make it seem so pretty 
 +++++
 
 The function random returns a random float between 0.0 and 1.0 (including 0.0 but not 1.0).
+random — Generate pseudo-random number 
+https://docs.python.org/3/library/random.html 
 
 ```python
 import random
